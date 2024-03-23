@@ -38,7 +38,7 @@ function Autocomplete() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []); 
+  }, []);
 
   const onJobSearchInputChange = (event) => {
     setJobSearchInput(event.target.value);
@@ -84,7 +84,7 @@ function Autocomplete() {
     }
   }, [searchData]);
 
-  const apiKey = "IOv1oSaJlK-5RRas0SYsM-7vBMmy28kUR0cbu5QIE4k";
+  const apiKey = "UPtaZvBhLYhragYNSYaucjj1vytI_j9X3vFoyU1HGJk";
 
   const fetchSuggestions = async (query) => {
     try {

@@ -7,10 +7,10 @@ const containerStyle = {
 };
 
 function MyComponent(props) {
-  
+
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyBKHAQbo2RGG9JP5atgCvPX8AflO_wi8-Q"
+    googleMapsApiKey: "AIzaSyAsMvdELIPtsdYB3qYA_s8vUTAzOKP5ALU"
   })
 
   const latitude = props.latitude;
@@ -34,16 +34,16 @@ function MyComponent(props) {
   }, [])
 
   return isLoaded ? (
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      >
-        { /* Child components, such as markers, info windows, etc. */ }
-        <></>
-      </GoogleMap>
+    <GoogleMap
+      mapContainerStyle={containerStyle}
+      center={center}
+      zoom={10}
+      onLoad={onLoad}
+      onUnmount={onUnmount}
+    >
+      { /* Child components, such as markers, info windows, etc. */}
+      <></>
+    </GoogleMap>
   ) : <></>
 }
 
