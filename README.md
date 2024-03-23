@@ -66,8 +66,8 @@ _[Vite](https://vitejs.dev/)_
 
 ## API Used
 
-_[Adzuna](https://developer.adzuna.com/)_
-_[Here](https://platform.here.com/)
+- [Adzuna](https://developer.adzuna.com/)
+- [Here](https://platform.here.com/)
 
 ## Team
 
