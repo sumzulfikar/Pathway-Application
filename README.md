@@ -15,7 +15,7 @@ Our intuitive tools allow you to easily apply for jobs, track your applications,
 
 ## Deployed Live Site
 
-[Live Site](https://jobpathway.netlify.app/)
+[Live Site](https://pathway-app.netlify.app/)
 
 
 
