@@ -1,12 +1,12 @@
 import axios from "axios";
-import ApiKey from "./ApiKey";
+import Api_Key from "./APIKeys";
 
 const resultsPerPage = 50;
 
 const corsURL = "https://cors-anywhere-jung-48d4feb9d097.herokuapp.com/";
 const baseURL = "http://api.adzuna.com/v1/api/jobs/gb/search/1?what=";
-const API_KEY = `&app_key=${ApiKey.apiKey}`;
-const APP_ID = `&app_id=${ApiKey.appID}`;
+const API_KEY = `&app_key=${Api_Key.apiKey}`;
+const APP_ID = `&app_id=${Api_Key.appID}`;
 const results_amount = `&results_per_page=${resultsPerPage}`;
 const content_type = "&content-type=application/json";
 

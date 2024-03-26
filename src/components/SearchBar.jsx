@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "../index.css";
 import { useNavigate, useLocation } from "react-router-dom";
 import API from "../utils/API.js";
-import ApiKey from "../utils/ApiKey.js";
+import Api_Key from "../utils/APIKeys.js";
 
 function Autocomplete() {
   let canReload = false;
@@ -89,7 +89,7 @@ function Autocomplete() {
 
   const fetchSuggestions = async (query) => {
     try {
-      const url = `https://autocomplete.search.hereapi.com/v1/autocomplete?q=${query}&limit=5&in=countryCode:GBR&apiKey=${ApiKey.apiAutoCompleteKey}`;
+      const url = `https://autocomplete.search.hereapi.com/v1/autocomplete?q=${query}&limit=5&in=countryCode:GBR&apiKey=${Api_Key.apiAutoCompleteKey}`;
       const response = await fetch(url);
       const data = await response.json();
       setSuggestions(data.items);
