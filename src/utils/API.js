@@ -1,5 +1,5 @@
 import axios from "axios";
-import { appID, apiKey } from "./APIKeys.js";
+import { appID, apiKey, apiAutoCompleteKey, googleMapsApiKey } from "./APIKeys.js";
 
 const resultsPerPage = 50;
 
