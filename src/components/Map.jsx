@@ -1,6 +1,6 @@
 import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
-
+import ApiKey from '../utils/ApiKey';
 const containerStyle = {
   width: '100%',
   height: '100%'
@@ -10,7 +10,7 @@ function MyComponent(props) {
 
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyAsMvdELIPtsdYB3qYA_s8vUTAzOKP5ALU"
+    googleMapsApiKey: ApiKey.googleMapsApiKey,
   })
 
   const latitude = props.latitude;
