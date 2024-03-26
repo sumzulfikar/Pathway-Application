@@ -1,5 +1,5 @@
 import axios from "axios";
-import { appID, apiKey } from "./APIKeys";
+import { appID, apiKey } from "./APIKeys.js";
 
 const resultsPerPage = 50;
 
